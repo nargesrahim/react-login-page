@@ -1,0 +1,163 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    align-items: center;
+    min-height: 100vh;
+}
+.formcontainer{
+    border: 1px solid silver;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+}
+.header{
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+    color: slateblue;
+}
+.formfield{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+.formField label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+}
+
+.formInput {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  border: 1px solid silver;
+  transition: all 0.2s ease-in;
+}
+
+.uncompleted {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  border: 1px solid red;
+  transition: all 0.2s ease-in;
+}
+.formInput:focus,
+.uncompleted:focus {
+  outline: none;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid slateblue;
+}
+
+.formfield span {
+  height: 15px;
+  text-align: left;
+  margin-top: 5px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: rgb(252, 45, 45);
+  line-height: 10px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgba(255, 0, 0, 0.175);
+}
+
+.checkBoxContainer {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: row !important;
+  align-items: center;
+  height: 30px !important;
+  text-align: center;
+}
+
+.formField:nth-child(6) label {
+  color: slateblue;
+}
+
+input[type="checkbox"] {
+  margin-left: 20px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid slateblue;
+  appearance: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+input[type="checkbox"]:checked {
+  width: 18px;
+  height: 18px;
+  background-color: slateblue;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:focus {
+  height: 18px;
+  width: 18px;
+  outline: none;
+  border: 2px solid slateblue;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formButtons button {
+  background-color: slateblue;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+.formButtons button:hover {
+  background-color: rgb(83, 72, 153);
+}
+
+.formButtons a {
+  color: slateblue;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  font-weight: 700;
+}
+
+.formButtons a:hover {
+  color: rgb(83, 72, 153);
+}
+@media (max-width: 440px) {
+  .formContainer {
+    padding: 20px;
+    margin: 50px 20px;
+  }
+
+  .formContainer {
+    width: 90%;
+  }
+
+  .formInput {
+    width: 90%;
+  }
+
+  .uncompleted {
+    width: 90%;
+  }
+}
+
